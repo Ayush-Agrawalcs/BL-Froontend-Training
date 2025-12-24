@@ -32,4 +32,4 @@ HTML5 introduces modern features like multimedia support, offline storage, and i
 HTML5 is designed for better user experience, especially on mobile devices.
 
 
-****![alt text](image.png)
+**![alt text](image.png)**
