@@ -23,7 +23,6 @@ JavaScript	Does not support background JS execution	Supports background executio
 Data Storage	Uses cookies for temporary data	Uses SQL databases, Local Storage, and Application Cache
 Multimedia Support	Requires Flash Player for audio and video	Native support using <audio> and <video> tags
 
-
 📌 Summary
 
 HTML is used to build the structure of webpages.
@@ -31,3 +30,6 @@ HTML is used to build the structure of webpages.
 HTML5 introduces modern features like multimedia support, offline storage, and improved performance.
 
 HTML5 is designed for better user experience, especially on mobile devices.
+
+
+****![alt text](image.png)
