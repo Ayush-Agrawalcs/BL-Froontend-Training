@@ -1,6 +1,7 @@
-let a=Number(process.argv[2]);
-let b=Number(process.argv[3]);
-let c=Number(process.argv[4]);
+const prompt=require("prompt-sync")();
+let a=Number(prompt("Enter Number:"));
+let b=Number(prompt("Enter Number:"));
+let c=Number(prompt("Enter Number:"));
 
 let sum=(a+b)*c;
 let sum1=c+(a/b);
