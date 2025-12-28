@@ -1,4 +1,5 @@
-let year=Number(process.argv[2]);
+const prompt=require("prompt-sync")();
+let year=Number(prompt("Enter Number:"));
 if((year%4==0 && year%100!=0) || (year%400==0)){
     console.log("Leep Year");
 }
