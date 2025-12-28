@@ -1,4 +1,5 @@
-let a=Number(process.argv[2]);
+const prompt=require("prompt-sync")();
+let a=Number(prompt("Enter Number:"));
 let count=0;
 for(let i=2;i<=a;i++){
     if(a%i==0){
