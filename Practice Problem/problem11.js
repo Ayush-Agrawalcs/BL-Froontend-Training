@@ -1,4 +1,5 @@
-let n = Number(process.argv[2]);
+const prompt=require("prompt-sync")();
+let a=Number(prompt("Enter Number:"));
 
 switch (n) {
   case 1:
