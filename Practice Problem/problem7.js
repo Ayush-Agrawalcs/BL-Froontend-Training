@@ -1,5 +1,5 @@
-let n = Number(process.argv[2]);
-
+const prompt=require("prompt-sync")();
+let n=Number(prompt("Enter Number:"));
 if (n === 1) {
   console.log("Unit");
 } 
