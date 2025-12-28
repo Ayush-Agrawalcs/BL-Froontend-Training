@@ -1,5 +1,6 @@
-let day = Number(process.argv[2]);
-let month = Number(process.argv[3]);
+const prompt=require("prompt-sync")();
+let day = Number(prompt("Enter Number:"));
+let month = Number(prompt("Enter Number:"));
 
 let result = false;
 
