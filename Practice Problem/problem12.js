@@ -1,5 +1,6 @@
-let c = Number(process.argv[2]);
-let v = Number(process.argv[3]);
+const prompt=require("prompt-sync")();
+let c = Number(prompt("Enter Number:"));
+let v = Number(prompt("Enter Number:"));
 
 let result;
 
