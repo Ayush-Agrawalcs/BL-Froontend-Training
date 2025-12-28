@@ -1,5 +1,6 @@
-    let a=121;
-    let b=132;
+    const prompt=require("prompt-sync")();
+    let a=Number(prompt("Enter First NUmber:"));
+    let b=Number(prompt("Enter Second NUmber:"));;
     if(pallendrome(a) && pallendrome(b)){
         console.log("yes both number are pallendrome");
     }
