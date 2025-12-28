@@ -1,4 +1,5 @@
-let n=Number(process.argv[2]);
+const prompt=require("prompt-sync")();
+let n=Number(prompt("Enter Number to search:"));
 let low=1;
 let high=100;
 while(low<=high){
