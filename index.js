@@ -17,30 +17,22 @@ but.addEventListener('click', () => {
     let p=d.match(/[aeiou]/gi);
     let q=e.match(/[aeiou]/gi);
      if (m && m.length >= 2 && n && n.length >= 2) {
-        let header = document.getElementsByClassName("header")[0];
-        let ce = document.getElementsByClassName("c")[0];
-        let tempClass = header.className;
-        header.className = ce.className;
-        ce.className = tempClass;
+     let header = document.getElementsByClassName("header")[0];
+     let ce = document.getElementsByClassName("c")[0];
+     swapStyle(header, ce);
     }
      else if (m && m.length >= 2 && o && o.length >= 2) {
         let header = document.getElementsByClassName("header")[0];
         let de = document.getElementsByClassName("d")[0];
-        let tempClass = header.className;
-        header.className = de.className;
-        de.className = tempClass;
+         swapStyle(header, de);
     } else if (m && m.length >= 2 && p && p.length >= 2) {
         let header = document.getElementsByClassName("header")[0];
         let ee = document.getElementsByClassName("e")[0];
-        let tempClass = header.className;
-        header.className = ee.className;
-        ee.className = tempClass;
+      swapStyle(header, ee);
     } else if (m && m.length >= 2 && q && q.length >= 2) {
         let header = document.getElementsByClassName("header")[0];
         let footer = document.getElementsByClassName("footer")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+         swapStyle(header, footer);
     }
 
 
@@ -48,47 +40,55 @@ but.addEventListener('click', () => {
 if(n && n.length>=2 && o && o.length>=2){
     let header = document.getElementsByClassName("c")[0];
         let footer = document.getElementsByClassName("d")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+       swapStyle(header, footer);
 }
 else if(n && n.length>=2 && p && p.length>=2){
 let header = document.getElementsByClassName("c")[0];
         let footer = document.getElementsByClassName("e")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+    swapStyle(header, footer);
 }
 else if(n && n.length>=2 && q && q.length>=2){
 let header = document.getElementsByClassName("c")[0];
         let footer = document.getElementsByClassName("footer")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+      swapStyle(header, footer);
 }
 
 
 if(o && o.length>=2 && p && p.length>=2){
 let header = document.getElementsByClassName("d")[0];
         let footer = document.getElementsByClassName("e")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+     swapStyle(header, footer);
 }
 else if(o && o.length>=2 && q && q.length>=2){
 let header = document.getElementsByClassName("e")[0];
         let footer = document.getElementsByClassName("footer")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+    swapStyle(header, footer);
 }
 
 
 if(p && p.length>=2 && q  && q.length>=2){
     let header = document.getElementsByClassName("e")[0];
         let footer = document.getElementsByClassName("footer")[0];
-        let tempClass = header.className;
-        header.className = footer.className;
-        footer.className = tempClass;
+      swapStyle(header, footer);
 }
 });
+
+function swapStyle(el1, el2) {
+  const style1 = window.getComputedStyle(el1);
+  const style2 = window.getComputedStyle(el2);
+
+  const temp1 = {};
+  const temp2 = {};
+
+  for (let prop of style1) {
+    temp1[prop] = style1.getPropertyValue(prop);
+    temp2[prop] = style2.getPropertyValue(prop);
+  }
+
+  for (let prop in temp1) {
+    el1.style.setProperty(prop, temp2[prop]);
+    el2.style.setProperty(prop, temp1[prop]);
+  }
+}
+
+
