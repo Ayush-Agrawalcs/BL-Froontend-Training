@@ -1,0 +1,162 @@
+
+.header{
+    background-color: red;
+    height:10vh;
+    width:auto;
+    text-align: center;
+
+}
+.p{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+}
+.p .c{
+    border: 2px solid aqua;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    width:50vw;
+    background-color: aqua;
+    
+}
+.p .d{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    width:50vw
+}
+.p .e{
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    width:50vw;
+    background-color:yellow;
+}
+
+.footer{
+    background-color: green;
+    height:10vh;
+    width:auto;
+    text-align: center;
+} 
+
+#but{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.dark-mode{
+    background-color: black;
+}
+    
+@media (max-width: 560px) {
+    .k {
+        display: flex;
+        flex-direction: column;
+    }
+    .p {
+        flex-direction: column;
+    }
+    .k .header{
+    background-color: red;
+    height:10vh;
+    width:auto;
+    text-align: center;
+    }
+    .k .p .c{
+    border: 2px solid aqua;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+    }
+
+    .k .p .d{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    }
+
+    .k .p .e{
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-color:yellow;
+    }
+
+    .k .footer{
+    background-color: green;
+    height:10vh;
+    width:auto;
+    text-align: center;
+    }
+}
+
+    
+@media (max-width: 821px) {
+   .header{
+    background-color: red;
+    height:10vh;
+    width:auto;
+    text-align: center;
+}
+.p{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 10px;
+    padding: 10px;
+}
+.p .d{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    width:100vh;
+    order:-1
+}
+.p .c{
+    border: 2px solid aqua;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    width:40vw;
+    background-color: aqua;
+    order:2
+    
+}
+.p .e{
+    border: 2px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    height: 50vh;
+    width:40vw;
+    color: white;
+    background-color:black;
+    order:3
+}
+
+.footer{
+    background-color: green;
+    height:10vh;
+    width:auto;
+    text-align: center;
+} 
+}
