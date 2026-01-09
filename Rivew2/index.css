@@ -1,0 +1,30 @@
+  .d{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .c{
+            
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            text-align: center;
+            color:black;
+            z-index: 1;
+            width: 400px;
+            height: 100px;
+            background-color: white;
+            border: 1px solid white;
+            padding-top: 50px;
+
+        }
+        .e{
+            width:100%;
+            padding-left:300px;
+            
+        } 
+    
